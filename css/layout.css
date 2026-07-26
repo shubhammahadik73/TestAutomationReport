@@ -1,0 +1,51 @@
+/* =========================================
+   Layout
+========================================= */
+
+body {
+
+    display: grid;
+
+    grid-template-columns: var(--sidebar-width) 1fr;
+
+    grid-template-rows: var(--header-height) 1fr;
+
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+
+    min-height: 100vh;
+
+}
+
+main {
+
+    grid-area: main;
+
+    margin-top: 0px;
+
+    margin-left: 10px;
+
+    padding: 32px;
+
+    transition: margin-left .25s ease;
+
+}
+
+.sidebar:hover~.header~main {
+
+    margin-left: var(--sidebar-expanded-width);
+
+}
+
+.page {
+
+    display: none;
+
+}
+
+.page.active {
+
+    display: block;
+
+}

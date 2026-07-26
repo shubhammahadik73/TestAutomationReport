@@ -1,0 +1,119 @@
+/* =========================================
+   Summary Cards
+========================================= */
+
+.summary-card {
+
+    background: linear-gradient(180deg, #243248 0%, #1E293B 100%);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 150px;
+
+    transition: .25s;
+
+}
+
+.summary-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--color-primary);
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.35);
+
+}
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.card-title{
+
+    color:var(--color-text-muted);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.card-icon{
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:12px;
+
+    background:#2C3B55;
+
+}
+
+.card-value{
+
+    margin-top:20px;
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.card-status{
+
+    color:var(--color-text-muted);
+
+    font-size:12px;
+
+}
+
+.card-trend.success{
+
+    color:#22C55E;
+
+}
+
+.card-trend.failed{
+
+    color:#EF4444;
+
+}
+
+.card-trend.warning{
+
+    color:#F59E0B;
+
+}

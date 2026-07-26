@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "total": 100,
+    "passed": 92,
+    "failed": 6,
+    "skipped": 2,
+    "duration": "12m 41s"
+  },
+  "environment": {
+    "browser": "Chrome",
+    "browserVersion": "138.0",
+    "os": "Windows 11",
+    "java": "21",
+    "playwright": "1.56.0",
+    "environment": "QA",
+    "build": "2026.07.26"
+  },
+"testCases": [
+  {
+    "id": "TC001",
+    "name": "User should login successfully with valid credentials after browser restart",
+    "azureUrl": "https://dev.azure.com/organization/project/_workitems/edit/1001",
+    "suite": "Authentication",
+    "status": "Failed",
+    "duration": 6420,
+    "methods": [
+      {
+        "name": "verifyValidLogin",
+        "status": "Passed",
+        "duration": 1100
+      },
+      {
+        "name": "verifyRememberMe",
+        "status": "Passed",
+        "duration": 820
+      },
+      {
+        "name": "verifySessionPersistence",
+        "status": "Passed",
+        "duration": 4500
+      }
+    ]
+  }
+]
+}
